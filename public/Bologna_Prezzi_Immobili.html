@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ecdf00502ab6f162e1a72f572af0d98f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ecdf00502ab6f162e1a72f572af0d98f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ecdf00502ab6f162e1a72f572af0d98f = L.map(
+                "map_ecdf00502ab6f162e1a72f572af0d98f",
+                {
+                    center: [44.494887, 11.342616],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ee2809df28d3cb4f526878b19e09a248 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ecdf00502ab6f162e1a72f572af0d98f);
+        
+    
+            var marker_7040c85b5cf70b3ab495abb423b84f25 = L.marker(
+                [44.496929, 11.342622],
+                {}
+            ).addTo(map_ecdf00502ab6f162e1a72f572af0d98f);
+        
+    
+        var popup_4518e9c27926d4f678623669a40812b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a346155a9f8e0e8e06ea8ae836ed90a1 = $(`<div id="html_a346155a9f8e0e8e06ea8ae836ed90a1" style="width: 100.0%; height: 100.0%;">Centro Storico: €4330/m²</div>`)[0];
+            popup_4518e9c27926d4f678623669a40812b3.setContent(html_a346155a9f8e0e8e06ea8ae836ed90a1);
+        
+
+        marker_7040c85b5cf70b3ab495abb423b84f25.bindPopup(popup_4518e9c27926d4f678623669a40812b3)
+        ;
+
+        
+    
+    
+            marker_7040c85b5cf70b3ab495abb423b84f25.bindTooltip(
+                `<div>
+                     Centro Storico
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53fe7f289d3aad802a14b1fc770abd8f = L.marker(
+                [44.479971, 11.354648],
+                {}
+            ).addTo(map_ecdf00502ab6f162e1a72f572af0d98f);
+        
+    
+        var popup_30091b2ec23f4ff3f6a7424b8a9bbb01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74a71463d18ca8435264f971601604fb = $(`<div id="html_74a71463d18ca8435264f971601604fb" style="width: 100.0%; height: 100.0%;">Colli Murri, Barbiano, Monte Donato: €4838/m²</div>`)[0];
+            popup_30091b2ec23f4ff3f6a7424b8a9bbb01.setContent(html_74a71463d18ca8435264f971601604fb);
+        
+
+        marker_53fe7f289d3aad802a14b1fc770abd8f.bindPopup(popup_30091b2ec23f4ff3f6a7424b8a9bbb01)
+        ;
+
+        
+    
+    
+            marker_53fe7f289d3aad802a14b1fc770abd8f.bindTooltip(
+                `<div>
+                     Colli Murri, Barbiano, Monte Donato
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bda0755d343af06b5e71620215661436 = L.marker(
+                [44.475384, 11.315214],
+                {}
+            ).addTo(map_ecdf00502ab6f162e1a72f572af0d98f);
+        
+    
+        var popup_4d9f0e7dd84aa553800d4a90d531a57c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_067487ce7109ce009345b2729250e915 = $(`<div id="html_067487ce7109ce009345b2729250e915" style="width: 100.0%; height: 100.0%;">Colli San Mamolo, Saragozza, San Luca: €4094/m²</div>`)[0];
+            popup_4d9f0e7dd84aa553800d4a90d531a57c.setContent(html_067487ce7109ce009345b2729250e915);
+        
+
+        marker_bda0755d343af06b5e71620215661436.bindPopup(popup_4d9f0e7dd84aa553800d4a90d531a57c)
+        ;
+
+        
+    
+    
+            marker_bda0755d343af06b5e71620215661436.bindTooltip(
+                `<div>
+                     Colli San Mamolo, Saragozza, San Luca
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9203a419870a55201dd8d30b779f3e1 = L.marker(
+                [44.490136, 11.324677],
+                {}
+            ).addTo(map_ecdf00502ab6f162e1a72f572af0d98f);
+        
+    
+        var popup_cc40d9af3519ab9acacd5c82edd16e92 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_99f2ea3666d82d0144c7fb81e814ba89 = $(`<div id="html_99f2ea3666d82d0144c7fb81e814ba89" style="width: 100.0%; height: 100.0%;">Costa, Saragozza: €3800/m²</div>`)[0];
+            popup_cc40d9af3519ab9acacd5c82edd16e92.setContent(html_99f2ea3666d82d0144c7fb81e814ba89);
+        
+
+        marker_a9203a419870a55201dd8d30b779f3e1.bindPopup(popup_cc40d9af3519ab9acacd5c82edd16e92)
+        ;
+
+        
+    
+    
+            marker_a9203a419870a55201dd8d30b779f3e1.bindTooltip(
+                `<div>
+                     Costa, Saragozza
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30de18e76b20ff5e8d03d631c2e35563 = L.marker(
+                [44.520367, 11.336849],
+                {}
+            ).addTo(map_ecdf00502ab6f162e1a72f572af0d98f);
+        
+    
+        var popup_de3b9b8eeed6d593991bc27135a75000 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9056fb9efdc2e72ee84c1dc6234ea83 = $(`<div id="html_c9056fb9efdc2e72ee84c1dc6234ea83" style="width: 100.0%; height: 100.0%;">Bolognina, Arcoveggio, Navile: €3178/m²</div>`)[0];
+            popup_de3b9b8eeed6d593991bc27135a75000.setContent(html_c9056fb9efdc2e72ee84c1dc6234ea83);
+        
+
+        marker_30de18e76b20ff5e8d03d631c2e35563.bindPopup(popup_de3b9b8eeed6d593991bc27135a75000)
+        ;
+
+        
+    
+    
+            marker_30de18e76b20ff5e8d03d631c2e35563.bindTooltip(
+                `<div>
+                     Bolognina, Arcoveggio, Navile
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4ad58857491e8224ee9d032bcf9122a = L.marker(
+                [44.484774, 11.362252],
+                {}
+            ).addTo(map_ecdf00502ab6f162e1a72f572af0d98f);
+        
+    
+        var popup_5b957b199d2276961537dc45e9772301 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bfb6010bf06236c7cc3152f8f835e0cf = $(`<div id="html_bfb6010bf06236c7cc3152f8f835e0cf" style="width: 100.0%; height: 100.0%;">San Vitale, Mazzini: €3084/m²</div>`)[0];
+            popup_5b957b199d2276961537dc45e9772301.setContent(html_bfb6010bf06236c7cc3152f8f835e0cf);
+        
+
+        marker_b4ad58857491e8224ee9d032bcf9122a.bindPopup(popup_5b957b199d2276961537dc45e9772301)
+        ;
+
+        
+    
+    
+            marker_b4ad58857491e8224ee9d032bcf9122a.bindTooltip(
+                `<div>
+                     San Vitale, Mazzini
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f286b62f880a9a17ba36f1fb710483ca = L.marker(
+                [44.476162, 11.368135],
+                {}
+            ).addTo(map_ecdf00502ab6f162e1a72f572af0d98f);
+        
+    
+        var popup_5835e6dac8b15ea538f0eeb5c45cb60f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7cceb51ef2a2bc3b25e309472ed95840 = $(`<div id="html_7cceb51ef2a2bc3b25e309472ed95840" style="width: 100.0%; height: 100.0%;">Toscana, Savena: €3301/m²</div>`)[0];
+            popup_5835e6dac8b15ea538f0eeb5c45cb60f.setContent(html_7cceb51ef2a2bc3b25e309472ed95840);
+        
+
+        marker_f286b62f880a9a17ba36f1fb710483ca.bindPopup(popup_5835e6dac8b15ea538f0eeb5c45cb60f)
+        ;
+
+        
+    
+    
+            marker_f286b62f880a9a17ba36f1fb710483ca.bindTooltip(
+                `<div>
+                     Toscana, Savena
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6559cdb567b2fb3c2a01e0e3c0f5bbe = L.marker(
+                [44.489516, 11.362866],
+                {}
+            ).addTo(map_ecdf00502ab6f162e1a72f572af0d98f);
+        
+    
+        var popup_c865fbc073906d26672f1ebbf2a1b404 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dec583d04f4813dafe1667c31daa51bb = $(`<div id="html_dec583d04f4813dafe1667c31daa51bb" style="width: 100.0%; height: 100.0%;">Murri, Cirenaica, Sant'Orsola Malpighi: €3551/m²</div>`)[0];
+            popup_c865fbc073906d26672f1ebbf2a1b404.setContent(html_dec583d04f4813dafe1667c31daa51bb);
+        
+
+        marker_b6559cdb567b2fb3c2a01e0e3c0f5bbe.bindPopup(popup_c865fbc073906d26672f1ebbf2a1b404)
+        ;
+
+        
+    
+    
+            marker_b6559cdb567b2fb3c2a01e0e3c0f5bbe.bindTooltip(
+                `<div>
+                     Murri, Cirenaica, Sant'Orsola Malpighi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95030aab37ae7ff0438837db9bc3db00 = L.marker(
+                [44.510158, 11.373619],
+                {}
+            ).addTo(map_ecdf00502ab6f162e1a72f572af0d98f);
+        
+    
+        var popup_40ec39c033e9dc1ca0b572dddec850ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7bc545049a5f8f9a91c327b40b3b4e7 = $(`<div id="html_b7bc545049a5f8f9a91c327b40b3b4e7" style="width: 100.0%; height: 100.0%;">San Donato, Pilastro, Fiera: €2767/m²</div>`)[0];
+            popup_40ec39c033e9dc1ca0b572dddec850ee.setContent(html_b7bc545049a5f8f9a91c327b40b3b4e7);
+        
+
+        marker_95030aab37ae7ff0438837db9bc3db00.bindPopup(popup_40ec39c033e9dc1ca0b572dddec850ee)
+        ;
+
+        
+    
+    
+            marker_95030aab37ae7ff0438837db9bc3db00.bindTooltip(
+                `<div>
+                     San Donato, Pilastro, Fiera
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18db2488f99f64813c20baeba0ff5586 = L.marker(
+                [44.523136, 11.292024],
+                {}
+            ).addTo(map_ecdf00502ab6f162e1a72f572af0d98f);
+        
+    
+        var popup_697af86c30f9199bd1c5242e4fb06535 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9aa48fdf3def92ef8e64f16b598999b6 = $(`<div id="html_9aa48fdf3def92ef8e64f16b598999b6" style="width: 100.0%; height: 100.0%;">Aeroporto, Borgo Panigale: €2378/m²</div>`)[0];
+            popup_697af86c30f9199bd1c5242e4fb06535.setContent(html_9aa48fdf3def92ef8e64f16b598999b6);
+        
+
+        marker_18db2488f99f64813c20baeba0ff5586.bindPopup(popup_697af86c30f9199bd1c5242e4fb06535)
+        ;
+
+        
+    
+    
+            marker_18db2488f99f64813c20baeba0ff5586.bindTooltip(
+                `<div>
+                     Aeroporto, Borgo Panigale
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
