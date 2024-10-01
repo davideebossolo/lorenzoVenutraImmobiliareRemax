@@ -1081,90 +1081,6 @@ strong {
   }
 }
 
-@media screen and (max-width: 991px) {
-  h1 {
-    font-size: 54px;
-  }
-
-  h2 {
-    font-size: 36px;
-  }
-
-  h3 {
-    font-size: 32px;
-  }
-
-  h4 {
-    font-size: 28px;
-  }
-
-  h5 {
-    font-size: 20px;
-  }
-
-  h6 {
-    font-size: 18px;
-  }
-
-  .section-padding {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .hero-section {
-    padding-top: 148px;
-    padding-bottom: 100px;
-  }
-
-  .navbar-brand,
-  .navbar-brand:hover {
-    font-size: var(--h5-font-size);
-  }
-
-  .navbar-expand-lg .navbar-nav {
-    padding-bottom: 20px;
-  }
-
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 0;
-    margin-bottom: 0;
-  }
-
-  .navbar .custom-btn {
-    margin-bottom: 10px;
-  }
-
-  .booking-form {
-    padding: 45px;
-  }
-
-  .contact-section .container {
-    width: auto;
-    margin-right: 10px;
-    margin-left: 10px;
-    padding: 35px;
-  }
-
-  .site-footer {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .custom-btn {
-    font-size: 14px;
-    padding: 12px 20px;
-  }
-
-  .menu-block-wrap,
-  .reviews-block-image-wrap,
-  .reviews-block-info {
-    padding: 20px;
-  }
-}
-
-
 @media screen and (max-width: 578px) {
   .navbar .container,
   .sticky-wrapper.is-sticky .container {
@@ -1174,62 +1090,216 @@ strong {
 }
 
 
-@media screen and (max-width: 480px) {
-  h1 {
-    font-size: 38px;
+
+
+
+/*---------------------------------------
+  RESPONSIVE STYLES
+-----------------------------------------*/
+@media screen and (max-width: 767px) {
+  .offer-box {
+      font-size: 18px; /* Smaller font size for very small screens */
   }
 
-  h2 {
-    font-size: 28px;
+  .offer-box h4 {
+      font-size: 16px;
   }
 
-  h3 {
-    font-size: 26px;
+  .menu-block {
+      padding: 8px; /* Further reduce padding */
   }
 
-  h4 {
-    font-size: 22px;
+  .menu-block h6, .menu-block strong {
+      font-size: 14px; /* Further reduce font size */
   }
 
-  h5 {
-    font-size: 20px;
+  .hero-section {
+      padding: 20px; /* Add padding to avoid overlap */
+      height: auto; /* Auto height ensures it fits content */
   }
 
-  .hero-section::after {
-    width: 200px;
-    height: 200px;
+  .team-block-wrap {
+      max-height: auto; /* Remove fixed height */
   }
 
-  .booking-form {
-    padding: 35px;
+  .navbar-nav .nav-link {
+      padding: 10px 5px;
   }
 
-  .opening-hours-list li {
-    font-size: 12px;
-  }
-
-  .reviews-block-image-wrap {
-    flex-direction: column;
-  }
-
-  .reviews-block-image {
-    margin-bottom: 15px;
+  .custom-btn {
+      font-size: 14px; /* Smaller button text */
+      padding: 8px 16px;
   }
 
   .timeline-container {
-    padding-left: 55px;
+      padding: 10px; /* Adjust padding for timeline */
   }
 
   .timeline-container::before {
-    left: 44px;
-    border: medium solid white;
-    border-width: 15px 15px 15px 0;
-    border-color: transparent white transparent transparent;
+      left: 35px; /* Adjust position */
+      border-width: 15px 15px 15px 0;
   }
 
-  .timeline-container-left::before,
-  .timeline-container-right::before {
-    top: 13px;
+  .navbar .container, .sticky-wrapper.is-sticky .container {
+      margin-right: 5px;
+      margin-left: 5px;
   }
 }
 
+@media screen and (max-width: 480px) {
+  h1 {
+      font-size: 32px;
+  }
+
+  .hero-section::after {
+      width: 150px;
+      height: 150px;
+  }
+
+  .booking-form {
+      padding: 20px;
+  }
+
+  .opening-hours-list li {
+      font-size: 10px;
+  }
+
+  .timeline-container {
+      padding-left: 45px;
+  }
+
+  .timeline-container::before {
+      left: 35px;
+      border-width: 10px 10px 10px 0;
+  }
+}
+
+.offer-box {
+  margin-top: 50px; /* Add margin to lower the offer-box */
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 991px) {
+  .offer-box {
+      margin-top: 30px; /* Reduce margin on smaller screens */
+      padding: 15px;
+      font-size: 24px; /* Smaller font size for mobile */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .offer-box {
+      margin-top: 20px; /* Further reduce margin for very small screens */
+      padding: 10px;
+      font-size: 18px;
+  }
+}
+
+
+/* Default size for larger screens */
+.navbar-brand h2 {
+  font-size: 48px; /* Default size for larger screens */
+  font-weight: bold;
+  color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-brand h2 {
+      font-size: 36px; /* Medium screens (tablets) */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand h2 {
+      font-size: 28px; /* Small screens (mobile phones) */
+  }
+}
+/* Default header styles for larger screens */
+.navbar {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.navbar-brand h2 {
+  font-size: 48px; /* Default font size for title on larger screens */
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar .custom-btn {
+  padding: 10px 20px; /* Default padding for buttons */
+  font-size: 16px;
+}
+
+/* Reduce header size for medium screens (tablets) */
+@media screen and (max-width: 991px) {
+  .navbar {
+      padding-top: 20px;
+      padding-bottom: 20px; /* Reduce navbar padding */
+  }
+
+  .navbar-brand h2 {
+      font-size: 36px; /* Reduce title font size */
+  }
+
+  .navbar .custom-btn {
+      padding: 8px 16px; /* Reduce button size */
+      font-size: 14px;
+  }
+
+  .navbar-nav .nav-link {
+      padding: 8px 10px; /* Adjust nav link padding */
+      font-size: 14px;
+  }
+}
+
+/* Further reduce header size for small screens (phones) */
+@media screen and (max-width: 767px) {
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px; /* Further reduce navbar padding */
+  }
+
+  .navbar-brand h2 {
+      font-size: 28px; /* Smaller font size for title */
+  }
+
+  .navbar .custom-btn {
+      padding: 6px 12px; /* Smaller buttons */
+      font-size: 12px;
+  }
+
+  .navbar-nav .nav-link {
+      padding: 6px 8px; /* Reduce nav link padding further */
+      font-size: 12px;
+  }
+}
+
+/* Compact header for extra small screens (very small phones) */
+@media screen and (max-width: 480px) {
+  .navbar {
+      padding-top: 10px;
+      padding-bottom: 10px; /* Minimal padding for the navbar */
+  }
+
+  .navbar-brand h2 {
+      font-size: 24px; /* Very small title size */
+  }
+
+  .navbar .custom-btn {
+      padding: 4px 10px; /* Tiny buttons */
+      font-size: 10px;
+  }
+
+  .navbar-nav .nav-link {
+      padding: 4px 6px; /* Minimal padding for nav links */
+      font-size: 10px;
+  }
+}
