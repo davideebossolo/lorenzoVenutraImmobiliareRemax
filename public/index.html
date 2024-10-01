@@ -16,27 +16,6 @@
             border-radius: 15px;
         }
 
-        .hero-section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #000;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .offer-box {
-            text-align: center;
-            color: #fff;
-            position: relative;
-            z-index: 2;
-            background: rgba(0, 0, 0, 0.65);
-            padding: 20px;
-            border-radius: 15px;
-            font-size: 30px;
-        }
-
         .offer-box h4 {
             color: rgb(255, 0, 0);
             font-size:  px;
@@ -232,41 +211,43 @@
                 </div>
             </div>
         </nav>
-
-        <section class="hero-section" id="section_1">
+        <section class="about-section section-padding" id="section_2">
+        <div class="offer-box">
             
-            <div class="offer-box">
-                <div class="text-center mb-4 pb-lg-2">
-                    <em>Offerta speciale solo fino a domani prezzo speciale</em>
-                    <h4 id="timer"></h4>
-                </div>
-
-                <div class="menu-block my-4">
-                    <div class="d-flex">
-                        <h6>
-                            Consulenza <span class="badge ms-3">Recommend</span>
-                        </h6>
-                        <span class="underline"></span>
-                        <div>
-                            <strong class="text-white ms-auto"><del>€250,00</del></strong>
-                            <strong class="ms-2">€119,99</strong>
-                        </div>
+            <div class="text-center mb-4 pb-lg-2">
+                <em>Offerta speciale solo fino a domani prezzo speciale</em>
+                <h4 id="timer"></h4>
+            </div>
+           
+            <div class="menu-block my-4">
+                <div class="d-flex">
+                    <h6>
+                        Consulenza <span class="badge ms-3">Recommend</span>
+                    </h6>
+                    <span class="underline"></span>
+                    <div>
+                        <strong class="text-white ms-auto"><del>€250,00</del></strong>
+                        <strong class="ms-2">€119,99</strong>
                     </div>
-                    <div class="border-top mt-2 pt-2">
-                        <small>Verifica del valore immmobiliare attraverso la ricerca</small><br>
-                        <small>di oggetti similari nella zona di riferimento</small>
-                        <div class="ms-lg-3">
-                            <a class="btn custom-btn custom-border-btn" href="reservation.html">
-                                Prenota
-                                <i class="bi-arrow-up-right ms-2"></i>
-                            </a>
-                        </div>
+                </div>
+                
+                <div class="border-top mt-2 pt-2">
+                    <div class="d-flex">
+                    <img src="images/bologna.jpg" alt="immagine" class="img-fluid me-3" width="150" height="150">
+                    <small>Verifica del valore immmobiliare attraverso la ricerca di oggetti similari nella zona di riferimento</small>
+                </div>
+                    <div class="ms-lg-3">
+                        <a class="btn custom-btn custom-border-btn" href="reservation.html">
+                            Prenota
+                            <i class="bi-arrow-up-right ms-2"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-
-        </section>
+        </div>
+    </section>
     </main>
+
 
     <section class="about-section section-padding" id="section_2">
         <div class="section-overlay"></div>
@@ -414,9 +395,10 @@
                     <em class="text-white">Say Hello</em>
                     <h2 class="text-white mb-4 pb-lg-2">Compila il form ecc...</h2>
                 </div>
-
+    
                 <div class="col-lg-6 col-12">
-                    <form action="#" method="post" class="custom-form contact-form" role="form">
+                    <!-- Aggiorna l'azione del form per puntare alla route /invia-contatto -->
+                    <form action="/invia-contatto" method="post" class="custom-form contact-form" role="form">
                         <div class="row">
                             <div class="col-lg-6 col-12">
                                 <label for="name" class="form-label">Name <sup class="text-danger">*</sup></label>
@@ -436,13 +418,14 @@
                         </div>
                     </form>
                 </div>
-
+    
                 <div class="col-lg-6 col-12 mx-auto mt-5 mt-lg-0 ps-lg-5">
                     <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5039.668141741662!2d72.81814769288509!3d19.043340656729775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c994f34a7355%3A0x2680d63a6f7e33c2!2sLover%20Point!5e1!3m2!1sen!2sth!4v1692722771770!5m2!1sen!2sth" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
                 </div>
             </div>
         </div>
     </section>
+    
 
     <footer class="site-footer">
         <div class="container">

@@ -65,6 +65,39 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
+// Definizione dello schema per la collezione "contatti"
+const contattiSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  email: { type: String, required: true },
+  message: { type: String, required: true }
+});
+
+// Modello per la collezione "contatti"
+const Contatto = mongoose.model('Contatto', contattiSchema);
+
+// Route per gestire l'invio del form di contatto
+app.post('/invia-contatto', async (req, res) => {
+  try {
+    const { name, email, message } = req.body;
+
+    // Crea un nuovo contatto con i dati inviati
+    const nuovoContatto = new Contatto({
+      name,
+      email,
+      message
+    });
+
+    // Salva il contatto nel database
+    await nuovoContatto.save();
+
+    // Reindirizza l'utente a una pagina di successo o invia una risposta
+    res.redirect('/success.html');
+  } catch (error) {
+    console.error('Errore durante l\'invio del contatto:', error);
+    res.status(500).send('Errore durante l\'invio del messaggio.');
+  }
+});
+
 // Route per gestire il form e salvare i dati in 'consulenze'
 app.post('/prenota-consulenza', async (req, res) => {
   try {

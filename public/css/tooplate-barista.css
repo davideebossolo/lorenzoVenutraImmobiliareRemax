@@ -1175,16 +1175,25 @@ strong {
 }
 
 .offer-box {
-  margin-top: 50px; /* Add margin to lower the offer-box */
   text-align: center;
   color: #fff;
-  position: relative;
-  z-index: 2;
   background: rgba(0, 0, 0, 0.65);
-  padding: 20px;
-  border-radius: 15px;
-  font-size: 30px;
+  padding: 10px; /* Riduci il padding per rendere il box più compatto */
+  border-radius: 10px; /* Riduci leggermente il raggio degli angoli */
+  font-size: 20px; /* Riduci la dimensione del testo */
+  max-width: 600px; /* Riduci la larghezza massima del box */
+  width: 90%; /* Mantieni l'adattabilità per schermi più piccoli */
 }
+
+.about-section {
+  display: flex;
+  justify-content: center; /* Centra l'elemento orizzontalmente */
+  align-items: center; /* Centra l'elemento verticalmente */
+  height: 100vh; /* Imposta l'altezza della sezione al 100% della viewport */
+  position: relative;
+  padding-top: 300px;
+}
+
 
 @media screen and (max-width: 991px) {
   .offer-box {
